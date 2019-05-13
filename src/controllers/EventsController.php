@@ -14,6 +14,6 @@ class EventsController extends BaseController {
 
 	public function index($request, $response, $args){
 		$events = $this->event->index();
-		return $this->response_ok($response, 'events', $events);
+		return $this->response_ok($response, $events);
 	}
 }
